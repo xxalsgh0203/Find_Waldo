@@ -9,19 +9,13 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 40%;
-    width: 200px;
-    height: 80px;
+    left: 42.5%;
+    width: 150px;
+    height: 40px;
     background-color: rgb(221, 103, 103);
     padding: 20px;
     align-items: center;
-}
-
-.game_button{
-    margin-top: 8px;
-    margin-bottom: 8px;
-    width: 40px;
-    height: 40px;
+    border-radius: 20px;
 }
 
 .game {
@@ -34,6 +28,12 @@ body {
     margin-top: 20px;
     background: url(img/waldo_1_background.jpeg) center/cover no-repeat;
 }
+
+.game_level{
+    font-size: 20px;
+    color: white;
+}
+
 
 .main_menu{
     align-items: center;
@@ -50,6 +50,10 @@ body {
     /* visibility: hidden; */
 }
 
+.main_menu_popup{
+    background-color: lightslategray;
+    opacity: 0.8;
+}
 
 .pop_up{
     margin: auto;
@@ -60,6 +64,21 @@ body {
     color: white;
     text-align: center;
     padding: 20px;
-    transform: translateY(-480%);
+    transform: translateY(-550%);
     visibility: hidden;
+}
+
+.main_menu_title{
+    color:white;
+    font-size: 42px;
+}
+
+.main_menu_text{
+    color:rgb(221, 103, 103);
+    font-size: 32px;
+}
+
+.main_menu_button{
+    width: 55px;
+    height: 55px;
 }
