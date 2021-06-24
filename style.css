@@ -4,7 +4,6 @@ body {
     background-color: lightslategray;
 }
 
-
 .game_tools{
     display: flex;
     flex-direction: column;
@@ -52,6 +51,7 @@ body {
 .main_menu_popup{
     background-color: lightslategray;
     opacity: 0.8;
+    border-radius: 20px;
 }
 
 .pop_up{
