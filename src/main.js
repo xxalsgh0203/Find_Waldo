@@ -19,6 +19,8 @@ mainMenuBtn.addEventListener('click', () => {
 });
 
 function initGame(){
+    clearInterval(timer);
+    gameTimer.innerHTML = '2 : 00';
     gameLevel.innerHTML = `LEVEL${level}`;
     popup.style.visibility = 'hidden';
     gamefield.innerHTML = '';
@@ -57,7 +59,6 @@ function startTimer(){
         }
         if(gameResult == true){
             clearInterval(timer);
-            // gameSuccess();
             gameResult = undefined;
             popupButton.addEventListener('click', () => {
                 initGame();
@@ -86,10 +87,29 @@ function gameSuccess(){
     popupMessage.innerHTML = `YOU FOUND HIM! NEXT LEVEL?`;
     popupButton.innerHTML = 'NEXT';
     level++;
+    if(level == 6){
+        gameOver();
+    }
 }
 
 function gameFail(){
     popup.style.visibility = 'visible';
     popupMessage.innerHTML = `YOU LOST HIM! TRY AGAIN?`;
     popupButton.innerHTML = 'RESTART';
+}
+
+function gameOver(){
+    popupMessage.innerHTML = 'YOU FOUND ALL THE WALDO! THANK YOU!'
+    popupButton.innerHTML = 'REGAME';
+    gamefield.innerHTML = '';
+    gameTimer.style.visibility = 'hidden';
+    gamefield.style.background = "url(img/found_waldo.jpeg) center/cover";
+    gameLevel.innerHTML = 'CONGRATS!!';
+    popupButton.addEventListener('click', () => reGame());
+}
+
+function reGame(){
+    level = 1;
+    gameTimer.style.visibility = 'visible';
+    initGame();
 }

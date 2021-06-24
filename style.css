@@ -55,6 +55,8 @@ body {
 }
 
 .pop_up{
+    display: flex;
+    flex-direction: column;
     margin: auto;
     width: 400px;
     height: 140px;
@@ -67,6 +69,12 @@ body {
     padding: 20px;
     transform: translateY(-550%);
     visibility: hidden;
+}
+
+.popup_button{
+    font-size: 15px;
+    color:maroon;
+    margin-top: 30px;
 }
 
 .main_menu_title{
