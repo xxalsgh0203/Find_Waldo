@@ -1,0 +1,16 @@
+
+body {
+    text-align: center;
+    background-color: lightslategray
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1000px;
+    height: 750px;
+    margin: auto;
+    margin-top: 20px;
+    background: url(img/waldo_1_background.jpeg) center/cover no-repeat;
+}
