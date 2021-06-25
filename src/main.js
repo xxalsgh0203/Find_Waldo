@@ -19,15 +19,22 @@ mainMenuBtn.addEventListener('click', () => {
 });
 
 function initGame(){
+
+
     clearInterval(timer);
     gameTimer.innerHTML = '2 : 00';
-    gameLevel.innerHTML = `LEVEL${level}`;
+    if(level == 6){
+        lastRound();
+    }else{
+        gameLevel.innerHTML = `LEVEL${level}`;
+    }
     popup.style.visibility = 'hidden';
     gamefield.innerHTML = '';
-    gamefield.style.background = "url(img/waldo_" + level + "_background.jpeg) center/cover";
+    gamefield.style.background = "url(img/waldo_background/waldo_" + level + "_background.jpeg) center/cover";
     mainMenu.style.visibility = 'hidden';
     throwWaldo();
     startTimer();
+
 }
 
 function throwWaldo(){
@@ -87,7 +94,7 @@ function gameSuccess(){
     popupMessage.innerHTML = `YOU FOUND HIM! NEXT LEVEL?`;
     popupButton.innerHTML = 'NEXT';
     level++;
-    if(level == 6){
+    if(level == 7){
         gameOver();
     }
 }
@@ -112,4 +119,9 @@ function reGame(){
     level = 1;
     gameTimer.style.visibility = 'visible';
     initGame();
+}
+
+function lastRound(){
+    gameLevel.innerHTML = 'LAST ROUND! FIND WALDO GIRL';
+    gameLevel.style.fontsize = '12px';
 }
