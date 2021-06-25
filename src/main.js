@@ -122,6 +122,5 @@ function reGame(){
 }
 
 function lastRound(){
-    gameLevel.innerHTML = 'LAST ROUND! FIND WALDO GIRL';
-    gameLevel.style.fontsize = '12px';
+    gameLevel.innerHTML = 'FIND WALDO GIRL';
 }
