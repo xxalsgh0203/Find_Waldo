@@ -11,13 +11,13 @@
 ![스크린샷_2021-06-25_오후_12 59 00](https://user-images.githubusercontent.com/62753490/123627530-16b56480-d84d-11eb-918c-eebb4f1f6c6f.png)
 <br>
 <br>
-**게임 초기 화면!**
+게임 초기 화면!
 <br>
 <br>
 ![스크린샷_2021-06-25_오후_12 59 10](https://user-images.githubusercontent.com/62753490/123627806-609e4a80-d84d-11eb-8f58-829efc0e5289.png)
 <br>
 <br>
-**레벨1**
+레벨1
 <br>
 <br>
 레벨 1부터 시작해서 제한시간 2분안에 윌리를 찾아야 합니다
